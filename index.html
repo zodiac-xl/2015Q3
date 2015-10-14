@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Talk about jQuery Source Code and Tricks</title>
+    <title>2015 Q3</title>
 
     <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
     <meta name="author" content="Hakim El Hattab">
@@ -41,6 +41,15 @@
         {
             text-transform: none;
         }
+        .slides{
+            text-align: left;
+        }
+        section{
+            text-align: left;
+        }
+        h3{
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -51,9 +60,9 @@
     <!-- Any section element inside of this container is displayed as a slide -->
     <div class="slides">
         <section>
-            <h1>jQuery异步编程</h1>
+            <h1>2015Q3 季度总结</h1>
 
-            <h3>deferred、promise、callback</h3>
+            <h3>工作、团队、个人、计划</h3>
             <br>
 
             <p style="text-align: right">
@@ -63,92 +72,21 @@
         </section>
 
 
-        <section>
-            <ul>
-                <li>背景</li>
-                <li>javascript异步编程的发展</li>
-                <li>jQuery异步编程</li>
-                <li>jQuery callbacks补充</li>
-            </ul>
-        </section>
 
-        <section data-markdown="md/背景.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
-
-
-        <section data-markdown="md/Javascript异步编程的发展.md" data-separator="^\n\n\n"
+        <section data-markdown="md/main.md" data-separator="^\n\n\n"
                  data-separator-vertical="^\n\n"></section>
 
-        <section>
-                <h5>jQuery异步编程</h5>
-                <ul>
-                    <li>
-                        jQuery deferred的诞生
-                    </li>
-                    <li>deferred的思想</li>
-                    <li>
-                        jQuery deferred主要功能
-                    </li>
-
-                    <li>发展趋势</li>
-                </ul>
-
-        </section>
-
-        <section data-markdown="md/异步嵌套 jQuery的deferred ES6的generator async:await .md" data-separator="^\n\n\n"
-                 data-separator-vertical="^\n\n"></section>
-
-        <section>
-            <p>前面deferred基本实现了异步编程的流程控制 为什么还需要callbacks呢？</p>
-        </section>
-
-        <section>
-            <p>是的 callbacks就是实现队列控制的</p>
-        </section>
-
-
-        <section data-markdown="md/Jquery callbacks.md" data-separator="^\n\n\n"
-                 data-separator-vertical="^\n\n"></section>
-
-        <section>
-            <h5>
-                总结
-            </h5>
-            <ul>
-                <li>异步编程的背景</li>
-                <li>
-                    <ul>
-                        <li>javascript异步编程的发展</li>
-                        <li>
-                            <ol>
-                                <li>回调函数callback</li>
-                                <li>事件监听</li>
-                                <li>Pub/Sub发布/订阅</li>
-                                <li>Promise对象</li>
-                            </ol>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li>jQuery异步编程</li>
-                        <li>
-                            <ol>
-                                <li>deferred的诞生</li>
-                                <li>deferred的思想</li>
-                                <li>deferred的功能</li>
-                                <li>发展趋势</li>
-                            </ol>
-                        </li>
-                    </ul>
-                </li>
-                <li>jQuery callbacks补充</li>
-            </ul>
-        </section>
 
 
         <section>
-            <h5>思考</h5>
-            <p>jquery的队列都是按序执行 为什么不用双向链表 方便实现队列的插入、删除等操作 改变执行顺序呢</p>
+            <h3>Thanks All</h3>
+            <b style="text-align: center;display: block">we are welcome</b>
+
+            <br>
+
+            <p style="text-align: right">
+                <small></small>
+            </p>
         </section>
 
     </div>
